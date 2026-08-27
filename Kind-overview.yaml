@@ -1,0 +1,23 @@
+                    setup-kind.ps1
+                          │
+                          ▼
+                 Prompt in PowerShell
+                    /          \
+                   /            \
+          Cluster Name       Worker Count
+                │                  │
+                └────────┬─────────┘
+                         ▼
+                  Generate YAML
+                         │
+                         ▼
+                     Kind CLI
+                         │
+                         ▼
+              Create Kubernetes Cluster
+                         │
+                         ▼
+                 Switch kubectl
+                         │
+                         ▼
+                  Verify Nodes ✅

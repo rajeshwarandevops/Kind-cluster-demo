@@ -1,0 +1,50 @@
+01-install-docker.ps1
+        │
+        ▼
+Check Windows
+        │
+        ▼
+Check Admin
+        │
+        ▼
+Check BIOS Virtualization
+        │
+        ▼
+Check WSL
+        │
+        ├── WSL OK ──────────────────┐
+        │                             │
+        └── WSL Missing               │
+                │                     │
+                ▼                     │
+        Install / Enable WSL 2        │
+                │                     │
+                ▼                     │
+             REBOOT                  │
+                │                     │
+                ▼                     │
+       Run script again              │
+                │                     │
+                └──────────┬──────────┘
+                           ▼
+                 Install Docker Desktop
+                           │
+                           ▼
+                  Start Docker Desktop
+                           │
+                           ▼
+                 Wait for Docker Engine
+                           │
+                           ▼
+                       READY ✅
+
+
+# install kubectl
+# install kind 
+#install kind cluster
+C:\kind\kind-Pre-requistes
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\01-install-docker-wsl.ps1
+.\02-install-kubectl.ps1
+.\03-install-kind.ps1
+.\04-create-kind-cluster.ps1
